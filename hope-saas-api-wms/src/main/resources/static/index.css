@@ -1,0 +1,374 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.app {
+    color: #333;
+    max-width: 2000px;
+    font-family: Source Han Sans CN;
+}
+
+.app .module {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.app .box-center {
+    margin: 0 auto;
+}
+
+.app .big-title,
+.app .small-title {
+    font-weight: bold;
+}
+
+.app .desc {
+    color: rgba(153, 153, 153, 1);
+    line-height: 35px;
+}
+
+.app .bottom-label {
+    width: 60px;
+    height: 2px;
+    background: rgba(30, 195, 164, 1);
+    border-radius: 1px;
+    margin: 8px auto 40px;
+}
+
+.app .header {
+    overflow: hidden;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0px 2px 10px 0px rgba(81, 81, 81, 0.1);
+}
+
+.app .header .content {
+    width: 1200px;
+    padding: 10px 0 10px 20px;
+    margin: 0 auto;
+}
+
+.app .header .circle {
+    display: inline-block;
+    width: 3px;
+    height: 3px;
+    background: rgba(54, 58, 58, 1);
+    border-radius: 50%;
+    vertical-align: middle;
+    margin: 0 8px;
+}
+
+
+.app .header .logo {
+    width: 10vw;
+    vertical-align: middle;
+}
+
+.app .header .name {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgba(73, 205, 180, 1);
+    vertical-align: middle;
+}
+
+.app .banner {
+    position: relative;
+}
+
+.app .banner .text_box {
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -7%;
+    margin-left: -37%;
+}
+
+.app .banner .big_text {
+    font-weight: bold;
+    font-size: 40px;
+    letter-spacing: 8px;
+    margin-bottom: 2%;
+}
+
+.app .banner .small_text {
+    font-size: 20px;
+    letter-spacing: 3px;
+    margin-bottom: 10%;
+}
+
+.app .banner .download_btn {
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    height: 40px;
+    line-height: 36px;
+    border-radius: 20px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 16px;
+    padding: 0px 8%;
+    letter-spacing: 2px;
+    box-shadow: 0px 6px 20px 0px rgba(51, 51, 51, 0.2);
+    margin-right: 10px;
+    font-weight: bold;
+    border: 2px solid #fff;
+}
+
+.app .banner .download_btn:hover {
+    color: rgba(7, 230, 181, 0.85);
+}
+
+.app .banner .download_btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-color: #fff;
+    width: 0;
+    height: 100%;
+    transition: width .3s ease-out;
+}
+
+.app .banner .download_btn:hover::before {
+    width: 100%;
+}
+
+.app .banner .header_img {
+    width: 100%;
+}
+
+.app [class^="point"] {
+    width: 16%;
+    display: inline-block;
+}
+
+.app [class^="point"] + [class^="point"] {
+    margin-left: 3%;
+}
+
+.app .characteristic {
+    background-color: #f5f5f5;
+}
+
+.app .characteristic .box-center {
+    margin-top: 25px;
+}
+
+.app .characteristic [class^="point"] {
+    color: #fff;
+    border-radius: 5px;
+    position: relative;
+    padding: 35px 0;
+    background-size: 100% 100%;
+    overflow: hidden;
+}
+
+.app .characteristic .img_box {
+    color: #fff;
+    width: 45%;
+    padding-top: 60%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+
+.app .characteristic .desc_points {
+    text-align: left;
+    padding: 25px 19%;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 100%;
+    left: 0;
+    background-image: url(./images/desc-bg.png);
+    background-size: 102% 100%;
+    background-position: -1px 0px;
+    transition: top ease-out 0.3s;
+}
+
+.app .characteristic .desc_points ul {
+    padding-left: 15px;
+    line-height: 25px;
+    margin-top: 10px;
+}
+
+.app .characteristic .point0 {
+    background-image: url(./images/image0.png);
+}
+
+.app .characteristic .point0:hover .desc_points,
+.app .characteristic .point1:hover .desc_points,
+.app .characteristic .point2:hover .desc_points,
+.app .characteristic .point3:hover .desc_points {
+    top: 0;
+}
+
+.app .characteristic .point0 .img_box {
+    background-image: url(./images/box-image0.png);
+}
+
+.app .characteristic .point1 {
+    background-image: url(./images/image1.png);
+}
+
+.app .characteristic .point1 .img_box {
+    background-image: url(./images/box-image1.png);
+}
+
+.app .characteristic .point2 {
+    background-image: url(./images/image2.png);
+}
+
+.app .characteristic .point2 .img_box {
+    background-image: url(./images/box-image4.png);
+}
+
+.app .characteristic .point3 {
+    background-image: url(./images/image3.png);
+}
+
+.app .characteristic .point3 .img_box {
+    background-image: url(./images/box-image3.png);
+}
+
+
+.app .features .box-center > div {
+    margin-bottom: 10px;
+    vertical-align: top;
+}
+
+.app .features .icon {
+    width: 60%;
+    margin-bottom: 20px;
+    /*animation: swing .3s 0s ease-out;*/
+}
+
+.app .features .icon:hover {
+    animation: swing .7s 0.1s ease-out;
+}
+
+
+.app .features .tip {
+    margin-top: 10px;
+    font-weight: 400;
+    color: #737272;
+    line-height: 18px;
+}
+
+.app .partners {
+    background-color: #F5F5F5
+}
+
+.app .partners .partners_img {
+    width: 80%;
+}
+
+.app footer {
+    background-color: #42AE6A;
+    line-height: 20px;
+    font-size: 12px;
+    text-align: center;
+    color: #fff;
+    padding: 3px 0;
+}
+
+.app footer a {
+    color: inherit;
+}
+
+@keyframes swing {
+    20% {
+        transform: rotate(90deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@media screen and (max-width: 1367px) {
+    .big-title {
+        font-size: 25px;
+    }
+
+    .normal-title {
+        font-size: 20px;
+    }
+
+    .small-title {
+        font-size: 18px;
+    }
+
+    .small-text {
+        font-size: 14px;
+    }
+
+    .normal-text {
+        font-size: 18px;
+    }
+
+    .big-text {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 1368px) {
+    .app .header .name {
+        font-size: 32px;
+    }
+
+    .app .header .circle {
+        width: 6px;
+        height: 6px;
+    }
+
+    .app .banner .big_text {
+        font-size: 60px;
+    }
+
+    .app .banner .small_text {
+        font-size: 30px;
+    }
+
+    .app .banner .download_btn {
+        height: 60px;
+        line-height: 56px;
+        border-radius: 30px;
+        font-size: 24px;
+    }
+
+    .big-title {
+        font-size: 30px;
+    }
+
+    .small-title {
+        font-size: 26px;
+    }
+
+    .small-text {
+        font-size: 20px;
+    }
+
+    .normal-text {
+        font-size: 26px;
+    }
+
+    .big-text {
+        font-size: 28px;
+    }
+
+    .app .characteristic .desc_points ul {
+        line-height: 30px;
+    }
+
+    .app .features .tip {
+        line-height: 30px;
+    }
+}

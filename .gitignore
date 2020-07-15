@@ -1,0 +1,16 @@
+/.idea/
+/hope-saas-api-util/src/main/resources/rebel.xml
+/hope-saas-api-auth/src/main/resources/rebel.xml
+/hope-saas-api-common/src/main/resources/rebel.xml
+/hope-saas-api-wms/src/main/resources/rebel.xml
+/hope-saas-api-util/target/
+/hope-saas-api-util/hope-saas-api-util.iml
+/hope-saas-api-auth/target/
+/hope-saas-api-auth/hope-saas-api-auth.iml
+/hope-saas-api-common/target/
+/hope-saas-api-common/hope-saas-api-common.iml
+/hope-saas-api-wms/target/
+/hope-saas-api-wms/hope-saas-api-wms.iml
+/log.path_IS_UNDEFINED
+hope-saas-api-wms/hope-saas-wms-api.iml
+hope-saas-oauth-parent.iml

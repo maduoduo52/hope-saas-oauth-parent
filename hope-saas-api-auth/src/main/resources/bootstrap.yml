@@ -1,0 +1,14 @@
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  application:
+    name: hope-saas-api-auth
+  cloud:
+    nacos:
+      config:
+        server-addr: 52.82.40.21:8848
+        namespace: b7ea8329-0af3-47fc-bc01-5ea2e56b636a
+        file-extension: yaml
+      discovery:
+        server-addr: 52.82.40.21:8848
+        namespace: b7ea8329-0af3-47fc-bc01-5ea2e56b636a

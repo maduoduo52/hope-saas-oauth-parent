@@ -1,0 +1,15 @@
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  application:
+    name: hope-saas-api-wms
+  profiles:
+    active: dev
+login:
+  #aes 加密key
+  key: 1234567812345678
+  #登录时长 单位S
+  time: 3600
+  # 单实例登录
+  owner: true
+

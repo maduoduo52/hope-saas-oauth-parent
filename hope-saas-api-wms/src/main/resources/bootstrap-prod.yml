@@ -1,0 +1,16 @@
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  application:
+    name: hope-saas-api-wms
+  profiles:
+    active: prod
+  cloud:
+    nacos:
+      config:
+        server-addr: 52.83.239.147:8848
+        namespace: 367a8e84-2c25-47ae-818b-6cab0ef9d5b0
+        file-extension: yaml
+      discovery:
+        server-addr: 52.83.239.147:8848
+        namespace: 367a8e84-2c25-47ae-818b-6cab0ef9d5b0
